@@ -1,5 +1,5 @@
 app_name = "hrms_mods"
-app_title = "Hrms Mods"
+app_title = "HRMS Mods"
 app_publisher = "takamol"
 app_description = "HRMS Mods"
 app_email = "info@takamol.io"
@@ -15,7 +15,7 @@ app_license = "mit"
 # 	{
 # 		"name": "hrms_mods",
 # 		"logo": "/assets/hrms_mods/logo.png",
-# 		"title": "Hrms Mods",
+# 		"title": "HRMS Mods",
 # 		"route": "/hrms_mods",
 # 		"has_permission": "hrms_mods.api.permission.has_app_permission"
 # 	}
@@ -47,6 +47,7 @@ app_license = "mit"
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+doctype_js = {"Full and Final Statement" : "public/js/full_and_final_statement.js"}
 
 # Svg Icons
 # ------------------
@@ -241,9 +242,11 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+#override_doctype_class = {
+#    "Payroll Entry": "hrms_mods.overrides.payroll_entry.CustomPayrollEntry"
+#}
 
-# Translation
-# ------------
-# List of apps whose translatable strings should be excluded from this app's translations.
-# ignore_translatable_strings_from = []
 
+
+
+fixtures = ["Nationality List",]
